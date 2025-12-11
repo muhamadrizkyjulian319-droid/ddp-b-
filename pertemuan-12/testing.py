@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
+# from streamlit_option_menu import option_menu
 
 st.set_page_config(page_title="Bangun Datar", page_icon="📝")
 
@@ -16,12 +16,12 @@ def luas_lingkaran(jari_jari):
     return 3.14 * jari_jari * jari_jari
 
 # Sidebar
-with st.sidebar:
-    menu = option_menu("Menu", ["Infomasi", "Luas Persegi", "Luas Segitiga", "Luas Lingkaran"], 
-        icons=["house", "square", "triangle", "circle"], menu_icon="list", default_index=0)
-    menu
+# with st.sidebar:
+#     menu = option_menu("Menu", ["Infomasi", "Luas Persegi", "Luas Segitiga", "Luas Lingkaran"], 
+#         icons=["house", "square", "triangle", "circle"], menu_icon="list", default_index=0)
+#     menu
 
-# menu = st.sidebar.selectbox("Menu", ["Pilih bangun datar", "Luas Persegi", "Luas Segitiga", "Luas Lingkaran"])
+menu = st.sidebar.selectbox("Menu", ["Pilih bangun datar", "Luas Persegi", "Luas Segitiga", "Luas Lingkaran"])
 
 if menu == "Luas Persegi":
     st.header("Luas Persegi")
